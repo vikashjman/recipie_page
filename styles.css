@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
+
+:root{
+    --bg-primary: hsl(28, 50%, 90%);
+    --primary: hsl(14, 45%, 36%);
+    --secondary: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 18% 87%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: var(--bg-primary);
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit';
+}
+
+.main-container{
+    background-color: white;
+    display: flex;
+    max-width: 40%;  
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.omelette-img{
+    background-size: cover;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+
+.article-heading{
+    margin-bottom: 4px;
+    font-family: 'Young Serif';
+}
+
+.prep-section p{
+    padding: 0;
+    margin:0;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.prep-section{
+    background-color: var(--rose-white);
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+}
