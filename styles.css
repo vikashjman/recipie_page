@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
 
 
-:root{
+:root {
     --bg-primary: hsl(28, 50%, 90%);
     --primary: hsl(14, 45%, 36%);
     --secondary: hsl(332, 51%, 32%);
@@ -12,9 +12,10 @@
     --wenge-brown: hsl(30, 10%, 34%);
     --dark-charcoal: hsl(24, 5%, 18%);
 }
-body{
-    margin:0;
-    padding:0;
+
+body {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     background-color: var(--bg-primary);
     /* height: 100vh; */
@@ -22,12 +23,14 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Outfit';
+    font-weight: 400;
+    color: var(--wenge-brown)
 }
 
-.main-container{
+.main-container {
     background-color: white;
     display: flex;
-    max-width: 40%;  
+    max-width: 40%;
     flex-direction: column;
     padding: 2rem;
     border-radius: 10px;
@@ -35,28 +38,102 @@ body{
     margin-bottom: 6rem;
 }
 
-.omelette-img{
+.omelette-img {
     background-size: cover;
     margin-bottom: 0.7rem;
     border-radius: 10px;
 }
 
-.article-heading{
+.article-heading {
     margin-bottom: 4px;
     font-family: 'Young Serif';
+    color: var(--primary);
 }
 
-.prep-section p{
+.prep-section p {
     padding: 0;
-    margin:0;
+    margin: 0;
     font-size: medium;
     font-weight: bold;
 }
 
-.prep-section{
+.prep-section li {
+    padding-bottom: 10px;
+}
+
+
+.prep-section {
     background-color: var(--rose-white);
     padding-top: 12px;
     padding-left: 12px;
     padding-right: 12px;
     border-radius: 10px;
+}
+
+.ingredients p,
+.instructions p,
+.nutrition p {
+    color: var(--primary);
+    font-size: 2rem;
+    font-family: 'Young Serif';
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
+
+.ingredients ul {
+    padding: 0;
+    padding-left: 25px;
+    margin-top: 0;
+}
+
+.ingredients li,
+.instructions li {
+    padding-bottom: 15px;
+    padding-left: 15px;
+
+}
+
+hr {
+    width: 100%;
+    color: var(--light-grey);
+    opacity: 0.5;
+}
+
+ol {
+    counter-reset: item;
+    list-style-type: none;
+}
+
+ol li {
+    counter-increment: item;
+    position: relative;
+}
+
+ol li:before {
+    content: counter(item) '.';
+    position: absolute;
+    left: -1.5em;
+    color: var(--primary);
+    /* Change this to your desired color */
+    font-weight: bold;
+}
+
+.nutrition-table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nutrition-table div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nutrient,
+.nutrient-value {
+    flex-basis: 50%;
+}
+
+.nutrient-value {
+    color: var(--primary);
+    font-weight: bold;
 }
